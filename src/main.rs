@@ -91,7 +91,7 @@ fn handle_connection(stream: &mut TcpStream) -> Response {
                 "gol.png" => ("./src/html/gol.png", ImgKind::Png),
                 "os.png" => ("./src/html/os.png", ImgKind::Png),
                 "threedee.png" => ("./src/html/threedee.png", ImgKind::Png),
-                _ => ("./src/html/img.jpg", ImgKind::Jpeg),
+                _ => ("./src/html/404.png", ImgKind::Png),
             };
             let mut file = File::open(path).unwrap();
             let mut buf = Vec::new();
